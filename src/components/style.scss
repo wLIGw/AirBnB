@@ -1,0 +1,9 @@
+.main__cards{
+    display: grid;
+    gap: 40px 24px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.main{
+    margin-bottom: 70px;
+}

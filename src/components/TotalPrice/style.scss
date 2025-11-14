@@ -1,0 +1,38 @@
+.totalprice{
+    max-width: 628px;
+    border: 1px solid #ddd;
+    padding: 17px;
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 16px;
+
+}
+
+.totalprice__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.totalprice__text-wraper {  
+    display: flex;
+}
+.totalprice__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 127%;
+    color: #222;
+    padding-right: 22px;
+
+}
+.totalprice__desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 127%;
+    color: #717171;
+    border-left: 1px solid #717171;
+    padding-left: 17px;
+
+}

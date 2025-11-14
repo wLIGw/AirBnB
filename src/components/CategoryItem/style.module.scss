@@ -1,0 +1,64 @@
+.wrapper {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 56px;
+    cursor: pointer;
+    position: relative;
+    color: #717171;
+    transition: color 0.3s ease;
+
+    .img {
+    margin-bottom: 8px;
+
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        transition: filter 0.3s ease;
+    }
+    
+    }
+
+    .img img{
+        
+    }
+
+    .title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 133%;
+    text-align: center;
+}
+
+  // линия снизу, скрыта по умолчанию
+    &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+    }
+}
+
+.active {
+    color: var(--accent);
+
+  // перекрашиваем иконку через фильтр под #ff385c
+    .img img {
+    filter: invert(27%) sepia(87%) saturate(7478%) hue-rotate(328deg) brightness(100%) contrast(100%);
+    
+}
+
+
+    &::after {
+    width: 100%;
+    } 
+}
